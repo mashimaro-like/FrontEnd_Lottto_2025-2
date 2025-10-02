@@ -1,0 +1,203 @@
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0%;
+}
+
+/* 상단 바 설정 */
+.topbar{
+  background-color: #4B89DC;
+  padding: 3px 0;  /*padding 부분의 상/하 부분, 좌/우 부분*/
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.topText{ 
+  width: min(1200px, 92%); 
+  color: white;   /*글자의 색깔*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 박스 */
+.page{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  padding-block: 40px;
+}
+
+/*카드 box*/
+.card{
+  width: 571px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #b5b5b5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*카드 제목*/
+.card_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4B89DC;
+  color: white;
+  height: 100px;
+}
+
+.title{
+  margin: 0;
+  font-size: 24px;
+}
+
+.subtitle{  font-size: 16px;  }
+
+/*공 표시*/
+.show_ball{
+  display: flex;
+  flex-direction: column;
+}
+
+.ball_title{
+  font-weight: bold;
+  font-size: 18px;
+  padding: 22px 20px;
+}
+
+/*공 정렬*/
+.balls{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 32;
+  gap: 32px;
+}
+
+/*공 형태 설정*/
+.ball{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/*공 색상 설정*/
+.ball_yellow{ background-color: #FBC400; }
+.ball_sky{ background-color: #69C8F2; }
+.ball_red{ background-color: #FF7272; }
+.ball_gray{ background-color: #AAAAAA; }
+.ball_green{ background-color: #B0D840; }
+.ball_purple{ background-color: #B49FFF; }
+.ball_orange{ 
+  background-color: #FF7F48;
+  position: relative;
+}
+
+/*별 그림*/
+.star{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 32px;
+  left: 28px;
+}
+
+/*버튼*/
+.make_num_button{
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  
+  width: 531px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  
+  background-color: #4B89DC;
+  border-radius: 8px;
+  color: white;
+  margin: 25px auto;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/*버튼 액션*/
+.make_num_button:active {
+  background-color: #357ae8; /* 더 진한 파랑 */
+  transform: scale(0.98);    /* 살짝 눌린 느낌 */
+}
+
+/*로또 구매*/
+.buy_lotto{
+  display: flex;
+  width: 531px;
+  flex-direction: column;
+  margin: 0px 20px;
+  border-top: 1px solid rgb(208, 204, 204);
+}
+
+.BuyLotto_title{
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 23px;
+  margin-bottom: 17px;
+}
+
+.buy_work{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 531px;
+  height: 37px;
+  gap: 6.8px;
+}
+
+.buy_num{
+  width: 451px;
+  height: 37px;
+  border-radius: 3px;
+  border: 1px solid rgba(196, 193, 193, 0.578);
+}
+
+.need_cash{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 11px;
+}
+
+/*버튼*/
+.buy_button{
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  
+  width: 531px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  
+  background-color: #4B89DC;
+  border-radius: 8px;
+  color: white;
+  margin: 25px auto;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/*버튼 액션*/
+.buy_button:active {
+  background-color: #357ae8; /* 더 진한 파랑 */
+  transform: scale(0.98);    /* 살짝 눌린 느낌 */
+}

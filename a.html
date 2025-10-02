@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비기너 로또</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 상단 바 -->
+  <header class="topbar">
+    <h1 class="topText">비기너 로또</h1>
+  </header>
+
+  <!-- 본론 -->
+  <main class="page">
+    <section class="card">
+      <header class="card_title">
+        <h2 class="title">로또 번호 생성기</h2>
+        <div class="subtitle">행운의 번호를 생성해보세요!</div>
+      </header>
+      <section class="show_ball">
+        <div class="ball_title">당첨 번호 생성</div>
+        <div class="balls">
+          <div class="ball ball_yellow">?</div>
+          <div class="ball ball_sky">?</div>
+          <div class="ball ball_red">?</div>
+          <div class="ball ball_gray">?</div>
+          <div class="ball ball_green">?</div>
+          <div class="ball ball_purple">?</div>
+          <div class="ball ball_orange">?
+            <img class="star" src="star.png" alt="">
+          </div>
+        </div>
+        <button class="make_num_button">번호 생성하기</button>
+      </section>
+      <section class="buy_lotto">
+        <div class="BuyLotto_title">로또 구매하기</div>
+        <div class="buy_work">
+          <div style="font-size: 16px;">구매 수량: </div>
+          <input class="buy_num" type="text" placeholder="구매 수량을 입력해주세요">
+        </div>
+        <div class="need_cash">총 금액: 1,000원 (1장당 1,000원)</div>
+        <button class="buy_button">구매하기</button>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
