@@ -38,12 +38,91 @@
         <div class="BuyLotto_title">로또 구매하기</div>
         <div class="buy_work">
           <div style="font-size: 16px;">구매 수량: </div>
-          <input class="buy_num" type="text" placeholder="구매 수량을 입력해주세요">
+          <input id="buy_count" class="buy_num" type="search" placeholder="구매 수량을 입력해주세요">
         </div>
-        <div class="need_cash">총 금액: 1,000원 (1장당 1,000원)</div>
+        <div class="need_cash">총 금액: <div id="total_pay">1,000</div>원 (1장당 1,000원)</div>
         <button class="buy_button">구매하기</button>
       </section>
+    
+      <div class="show_result_block">
+        <div class="show_result">
+          <div class="show_result_title">당첨 결과 확인</div>
+          
+          <div class="win_balls result_balls">
+            <div class="win_result_title result_balls_title">이번 주 당첨 번호: </div>
+            <!-- <div class="win_balls_list result_balls_list"></div> -->
+          </div>
+        
+          <div class="my_balls result_balls">
+            <div class="my_result_title result_balls_title">내가 구매한 번호: </div>
+            <!-- <div class="my_balls_list result_balls_list"></div> -->
+          </div>
+        
+          <button class="total_result_button">결과 확인하기</button>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal_popup">
+          <h1>당첨 결과</h1>
+          <table class="result_table">
+            <thead>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <th>일치 갯수</th>
+                <th>당첨금</th>
+                <th>당첨 갯수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <td>3개</td>
+                <td>5,000원</td>
+                <td><div class="count_match"><div id="match_3">n</div>개</div></td>
+              </tr>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <td>4개</td>
+                <td>50,000원</td>
+                <td class="count_match"><div id="match_4">n</div>개</td>
+              </tr>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <td>5개</td>
+                <td>150,000원</td>
+                <td class="count_match"><div id="match_5">n</div>개</td>
+              </tr>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <td>5개 + 보너스</td>
+                <td>15,000,000원</td>
+                <td class="count_match"><div id="match_5plus">n</div>개</td>
+              </tr>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+              <tr>
+                <td>6개</td>
+                <td>200,000,000원</td>
+                <td class="count_match"><div id="match_6">n</div>개</td>
+              </tr>
+              <tr class="section_bar"><td colspan="3"></td></tr>
+            </tbody>
+          </table>
+
+          <div class="final_money">
+            <div>당신의 당첨금은 총 </div>
+            <div>
+              <span id="get_money">xxxx</span>원
+            </div>
+            입니다
+          </div>
+
+          <button class="close">닫기</button>
+        </div>
+      </div>
     </section>
   </main>
+
+  <script src="js_lotto.js"></script>
 </body>
 </html>

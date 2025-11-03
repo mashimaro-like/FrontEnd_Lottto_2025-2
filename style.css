@@ -22,7 +22,6 @@ html, body{
 
 /* 박스 */
 .page{
-  height: 60%;
   display: flex;
   justify-content: center;
   padding-block: 40px;
@@ -72,7 +71,7 @@ html, body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0 32;
+  padding: 0;
   gap: 32px;
 }
 
@@ -111,7 +110,7 @@ html, body{
 }
 
 /*버튼*/
-.make_num_button{
+button{
   justify-content: center;
   align-items: center;
   font-size: 16px;
@@ -125,14 +124,17 @@ html, body{
   background-color: #4B89DC;
   border-radius: 8px;
   color: white;
-  margin: 25px auto;
 
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
+.make_num_button {
+  margin: 25px auto;
+}
+
 /*버튼 액션*/
-.make_num_button:active {
+button:active {
   background-color: #357ae8; /* 더 진한 파랑 */
   transform: scale(0.98);    /* 살짝 눌린 느낌 */
 }
@@ -175,29 +177,168 @@ html, body{
   margin-top: 11px;
 }
 
+#total_pay {
+  display: inline-block;
+}
+
 /*버튼*/
 .buy_button{
+  margin: 21px auto;
+}
+
+.show_result_block {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-  
+  display: none;
+}
+
+.show_result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   width: 531px;
-  height: 40px;
   padding: 0;
   border: none;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+  margin: 0px 20px 26px 20px;
+}
+
+.show_result_title {
+  display: block;
+  align-self: flex-start;
+  margin: 17px 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result_balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 531px;
+  padding: 0;
+  border: none;
+}
+
+.result_balls_title {
+  display: block;
+  align-self: flex-start;
+  margin: 1px 15px;
+
+  font-size: 16px;
+}
+
+.result_balls_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 22px 18px;
+  gap: 30px;
+}
+
+.win_balls {
+  display: none;
+}
+
+.my_balls {
+  display: none;
+}
+
+.total_result_button {
+  max-width: 420px;
+  margin: 2px 55px 14px 56px;
+  display: none;
+}
+
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   
-  background-color: #4B89DC;
-  border-radius: 8px;
-  color: white;
-  margin: 25px auto;
-
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/*버튼 액션*/
-.buy_button:active {
-  background-color: #357ae8; /* 더 진한 파랑 */
-  transform: scale(0.98);    /* 살짝 눌린 느낌 */
+.modal_popup {
+  width: 543px;
+  height: 585px;
+  background: white;
+
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.subtitle_result {
+  display: flex;
+  justify-content: center;
+
+  gap: 97px;
+}
+
+.result_table {
+  width: 464px;
+  height: 321px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  table-layout: fixed;
+}
+
+th {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.result_table tbody tr:not(.section_bar) > td {
+  padding: 10px;
+}
+
+.section_bar {
+  width: 460px;
+  height: 1px;
+  background: #D9D9D9;
+  border: none;
+}
+
+.count_match {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.final_money {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-bottom: 21px;
+  margin-top: 3px;
+}
+
+.close {
+  width: 456px;
+  height: 41px;
+}
+
