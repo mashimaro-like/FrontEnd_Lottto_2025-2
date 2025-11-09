@@ -243,10 +243,7 @@ button:active {
   gap: 30px;
 }
 
-.win_balls {
-  display: none;
-}
-
+.win_balls,
 .my_balls {
   display: none;
 }
